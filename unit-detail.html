@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Unit | BekoRental</title>
+  <!-- File ini ada di dalam folder pages/, jadi path memakai ../ untuk naik satu folder -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="detail">
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo">BEKO<span>RENTAL</span></a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="../index.html#beranda">Beranda</a>
+        <a href="../index.html#tentang">Tentang Kami</a>
+        <a href="../index.html#unit">Produk</a>
+        <a href="../index.html#album">Album</a>
+        <a href="../index.html#informasi">Informasi Penyewaan</a>
+        <a href="../index.html#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section detail-page">
+    <div class="container" id="unit-detail"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> BekoRental. Semua hak dilindungi.</div>
+  </footer>
+
+  <!-- Tombol WhatsApp melayang (link diisi oleh script.js) -->
+  <a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Chat via WhatsApp"><span class="ico" data-icon="chat"></span></a>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

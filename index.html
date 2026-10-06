@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rental Beko & Excavator</title>
+  <meta name="description" content="Penyewaan beko dan excavator untuk proyek konstruksi, tambang, dan lahan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- 1. NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">CV. SENTRAL<span>MOBILINDO</span></a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html#beranda">Beranda</a>
+        <a href="index.html#tentang">Tentang Kami</a>
+        <a href="index.html#unit">Produk</a>
+        <a href="index.html#album">Album</a>
+        <a href="index.html#informasi">Informasi Penyewaan</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO (ganti foto: simpan sebagai images/hero.jpg) -->
+    <section class="hero" id="beranda">
+      <div class="container">
+        <h1>Beragam Unit untuk Mendukung Setiap Proyek</h1>
+        <p>Sewa alat berat dengan unit terawat dan operator berpengalaman. Konsultasi dan pemesanan cukup lewat WhatsApp.</p>
+        <div class="hero-actions">
+          <a href="#unit" class="btn btn-primary">Lihat Unit</a>
+          <a href="#kontak" class="btn btn-ghost">Hubungi Kami</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRIP ANGKA (angka dummy, ganti sesuai data usaha Anda) -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><strong>2010</strong><span>Sejak Tahun</span></div>
+        <div class="stat"><strong>50+</strong><span>Proyek selesai</span></div>
+        <div class="stat"><strong>20+</strong><span>Unit alat berat</span></div>
+        <div class="stat"><strong>7 hari</strong><span>Layanan setiap hari</span></div>
+      </div>
+    </section>
+
+    <!-- 3. TENTANG KAMI -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="narrow">
+          <h2>Tentang Kami</h2>
+          <p>CV. Sentral Mobilindo merupakan perusahaan yang bergerak di bidang rental/sewa alat berat, trado, foco crane, dan lain-lain, yang berkomitmen memberikan kualitas terbaik bagi klien sehingga hasil yang diharapkan dapat tercapai lebih mudah dalam waktu yang relatif lebih singkat.</p>
+          <p>Dengan didukung oleh alat-alat baru serta tenaga ahli yang disiplin dan berpengalaman di berbagai proyek, dan didukung oleh operator senior profesional yang memiliki surat ber-SIO (Surat Izin Operator) dan alat yang ber-SILO (Surat Izin Layak Operasi).</p>
+        </div>
+        <div class="vm">
+          <article class="info"><h3>Visi</h3><p>CV. Sentral Mobilindo, mitra terpecaya dan terbaik dalam rental alat berat, foco, crane, serta kendaraan, dan bangga melayani kepuasan klien serta berkembang menjadi perusahaan yang besar dan lengkap di Riau. </p></article>
+          <article class="info"><h3>Misi</h3>
+            <ul>
+              <li>Menjadi mitra bisnis yang dapat diandalkan dan profesional dalam bekerja.</li>
+              <li>Bekerja dengan tanggung jawab secara profesional dan berintegritas kepada peningkatan secara terus-menerus.</li>
+              <li>Memberikan solusi dan memahami keinginan klien.</li>
+              <li>Menempatkan kepuasan klien sebagai komitmen utama.</li>
+              <li>Memberikan pelayanan dan unit yang terbaik guna mencapai kepuasan klien.</ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KENAPA MEMILIH KAMI -->
+    <section class="section dark" id="keunggulan">
+      <div class="container">
+        <h2>Kenapa Memilih Kami</h2>
+        <p class="lead">Empat alasan pelanggan kembali menyewa.</p>
+        <div class="grid why-grid">
+          <article class="why-item"><span class="ico" data-icon="tool"></span><h3>Unit terawat</h3><p>Setiap unit dicek sebelum dikirim ke lokasi.</p></article>
+          <article class="why-item"><span class="ico" data-icon="award"></span><h3>Operator bersertifikat</h3><p>Operator berpengalaman dan siap bekerja.</p></article>
+          <article class="why-item"><span class="ico" data-icon="zap"></span><h3>Respon cepat</h3><p>Admin menjawab lewat WhatsApp dengan cepat.</p></article>
+          <article class="why-item"><span class="ico" data-icon="truck"></span><h3>Mobilisasi mudah</h3><p>Unit diantar langsung ke lokasi proyek Anda.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. KATALOG UNIT (diisi oleh script.js) -->
+    <section class="section alt" id="unit">
+      <div class="container">
+        <h2>Produk dan Layanan</h2>
+        <p class="lead">Pilih kategori, lalu lihat spesifikasi lengkapnya.</p>
+        <div class="filters" id="product-filters"></div>
+        <div class="grid" id="unit-list"></div>
+      </div>
+    </section>
+
+    <!-- ALBUM FOTO (diisi oleh script.js dari data ALBUM) -->
+    <section class="section" id="album">
+      <div class="container">
+        <h2>Album Foto</h2>
+        <p class="lead">Foto semua unit kami. Klik foto untuk memperbesar.</p>
+        <div class="filters" id="album-filters"></div>
+        <div class="album-grid" id="album-grid"></div>
+      </div>
+    </section>
+
+    <!-- OPERATOR (teks bisa diedit langsung di sini) -->
+    <section class="section dark" id="operator">
+      <div class="container narrow">
+        <h2>Operator Kami</h2>
+        <p class="lead">Kami memiliki operator-operator yang berpengalaman dan SIO (Surat Izin Operator) yang telah ikut bergabung sejak awal di CV. Sentral Mobilindo. Operator kami selalu mengedepankan kepuasan pelanggan dengan hasil kerja maksimal sebagai bentuk pelayanan terbaik kami.</p>
+      </div>
+    </section>
+
+    <!-- 6. INFORMASI PENYEWAAN (teks mudah diedit) -->
+    <section class="section" id="informasi">
+      <div class="container">
+        <h2>Informasi Penyewaan</h2>
+        <div class="grid info-grid">
+          <article class="info"><span class="ico" data-icon="file"></span><h3>Cara penyewaan</h3><p>Pilih unit, hubungi kami lewat WhatsApp, lalu sepakati harga dan jadwal.</p></article>
+          <article class="info"><span class="ico" data-icon="clock"></span><h3>Durasi penyewaan</h3><p>Harian, mingguan, atau bulanan. Minimal sewa 1 hari (8 jam kerja).</p></article>
+          <article class="info"><span class="ico" data-icon="pin"></span><h3>Area pelayanan</h3><p>Kota Anda dan sekitarnya. Area di luar itu bisa dikonsultasikan.</p></article>
+          <article class="info"><span class="ico" data-icon="user"></span><h3>Informasi operator</h3><p>Operator berpengalaman tersedia untuk setiap unit.</p></article>
+          <article class="info"><span class="ico" data-icon="truck"></span><h3>Mobilisasi unit</h3><p>Pengiriman memakai trailer. Biaya mobilisasi dihitung sesuai jarak lokasi.</p></article>
+          <article class="info"><span class="ico" data-icon="shield"></span><h3>Ketentuan penyewaan</h3><p>Pembayaran, jam kerja, dan BBM mengikuti kesepakatan dengan admin.</p></article>
+          <article class="info"><span class="ico" data-icon="clip"></span><h3>Yang perlu disiapkan</h3><p>Lokasi kerja, akses jalan untuk trailer, dan kebutuhan pekerjaan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PROSES PENYEWAAN -->
+    <section class="section alt" id="proses">
+      <div class="container">
+        <h2>Proses Penyewaan</h2>
+        <ol class="steps">
+          <li><span class="ico" data-icon="search"></span><h3>Pilih unit</h3><p>Lihat katalog dan tentukan unit yang cocok.</p></li>
+          <li><span class="ico" data-icon="chat"></span><h3>Hubungi kami</h3><p>Kirim pesan lewat tombol WhatsApp.</p></li>
+          <li><span class="ico" data-icon="file"></span><h3>Konsultasikan kebutuhan</h3><p>Ceritakan lokasi, durasi, dan jenis pekerjaan.</p></li>
+          <li><span class="ico" data-icon="check"></span><h3>Konfirmasi penyewaan</h3><p>Setujui harga dan jadwal, unit dikirim ke lokasi.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- BRAND & KLIEN (diisi oleh script.js dari data BRANDS dan CLIENTS) -->
+    <section class="section" id="klien">
+      <div class="container">
+        <h2>Brand Alat Kami</h2>
+        <p class="lead">Unit yang kami sediakan memakai brand terpercaya.</p>
+        <div class="logo-row" id="brand-list"></div>
+        <h2 class="sub">Klien Kami</h2>
+        <p class="lead">Dipercaya oleh perusahaan dan kontraktor berikut.</p>
+        <div class="logo-row" id="client-list"></div>
+      </div>
+    </section>
+
+    <!-- BANNER AJAKAN (tombol diisi oleh script.js) -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div><h2>Butuh unit untuk proyek Anda?</h2><p>Konsultasikan kebutuhan Anda dengan kami.</p></div>
+        <a class="btn btn-dark" id="cta-wa" target="_blank" rel="noopener">Chat via WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- 8. KONTAK (diisi oleh script.js dari data ADMINS) -->
+    <section class="section alt" id="kontak">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <div class="grid" id="admin-list"></div>
+        <div class="kontak-lain" id="kontak-lain"></div>
+        <div class="map-box" id="map-box"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> BekoRental. Semua hak dilindungi.</div>
+  </footer>
+
+<!-- Tombol WhatsApp melayang (link diisi oleh script.js) -->
+  <a class="wa-float" id="wa-float" target="_blank" rel="noopener" aria-label="Chat via WhatsApp"><span class="ico" data-icon="chat"></span></a>
+
+  <!-- Tampilan foto besar (lightbox), awalnya tersembunyi -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Tutup">✕</button>
+    <figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
